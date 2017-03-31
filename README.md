@@ -17,5 +17,5 @@
 * [Monitor](https://en.wikipedia.org/wiki/Monitor_(synchronization))
 * [Spurious wakeup](https://en.wikipedia.org/wiki/Spurious_wakeup)
 * [Implement mutex using semaphore](https://en.wikipedia.org/wiki/Mutual_exclusion)
-* [Implement semaphore using mutex]
+* [Implement semaphore using mutex](https://en.wikipedia.org/wiki/Semaphore_(programming))
 

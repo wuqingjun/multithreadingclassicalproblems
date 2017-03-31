@@ -2,10 +2,14 @@
 //
 
 #include "stdafx.h"
-
+#include "..\..\SemaphoreImplementedUsingAtomic\sempaphoreimplementedusingatomic_test.h"
 
 int main()
 {
+	SemaphoreTest test;
+
+	test.Test();
+
     return 0;
 }
 

@@ -19,9 +19,12 @@
     <Filter Include="Problems\ProducerConsumer">
       <UniqueIdentifier>{64c6f152-cb76-49a8-9775-35fb2365607b}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
+    <Filter Include="Problems\MutexImplementedUsingSemaphore">
+      <UniqueIdentifier>{cfd2d55e-0f8d-4b39-b82b-b9721b0c6572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Problems\SemaphoreImplementedUsingAtomic">
+      <UniqueIdentifier>{195649b0-d83b-4a31-bcdb-299defc3cac4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -33,6 +36,15 @@
     <ClInclude Include="..\..\ProducerConsumer\producerconsumer_wade.h">
       <Filter>Problems\ProducerConsumer</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\MutexImplementedUsingSemaphore\muteximplementedusingsemaphore_wade.h">
+      <Filter>Problems\MutexImplementedUsingSemaphore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SemaphoreImplementedUsingAtomic\sempaphoreimplementedusingatomic.h">
+      <Filter>Problems\SemaphoreImplementedUsingAtomic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SemaphoreImplementedUsingAtomic\sempaphoreimplementedusingatomic_test.h">
+      <Filter>Problems\SemaphoreImplementedUsingAtomic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -41,5 +53,8 @@
     <ClCompile Include="WindowsCppTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" />
   </ItemGroup>
 </Project>

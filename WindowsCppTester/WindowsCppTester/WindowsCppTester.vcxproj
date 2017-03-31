@@ -142,10 +142,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="..\..\MutexImplementedUsingSemaphore\muteximplementedusingsemaphore_wade.h" />
     <ClInclude Include="..\..\ProducerConsumer\producerconsumer_wade.h" />
+    <ClInclude Include="..\..\SemaphoreImplementedUsingAtomic\sempaphoreimplementedusingatomic.h" />
+    <ClInclude Include="..\..\SemaphoreImplementedUsingAtomic\sempaphoreimplementedusingatomic_test.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -157,6 +157,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="WindowsCppTester.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
