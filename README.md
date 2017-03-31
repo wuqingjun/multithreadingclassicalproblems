@@ -16,4 +16,6 @@
 * [Asynchronous semaphore](https://en.wikipedia.org/wiki/Asynchronous_semaphore)
 * [Monitor](https://en.wikipedia.org/wiki/Monitor_(synchronization))
 * [Spurious wakeup](https://en.wikipedia.org/wiki/Spurious_wakeup)
+* [Implement mutex using semaphore](https://en.wikipedia.org/wiki/Mutual_exclusion)
+* [Implement semaphore using mutex]
 
