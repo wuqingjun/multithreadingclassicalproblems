@@ -48,6 +48,12 @@
     <ClInclude Include="..\..\SemaphoreImplementedUsingAtomic\sempaphoreimplementedusingatomic_test.h">
       <Filter>Problems\SemaphoreImplementedUsingAtomic</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\EfficientLogging\efficientloggingclass_test.h">
+      <Filter>Problems\EfficientLogging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EfficientLogging\efficientloggingclass_wade.h">
+      <Filter>Problems\EfficientLogging</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
