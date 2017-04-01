@@ -25,6 +25,9 @@
     <Filter Include="Problems\SemaphoreImplementedUsingAtomic">
       <UniqueIdentifier>{195649b0-d83b-4a31-bcdb-299defc3cac4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Problems\EfficientLogging">
+      <UniqueIdentifier>{480e000c-b03d-47c2-b65f-f3317cbaed5e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
