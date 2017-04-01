@@ -6,7 +6,7 @@ class LogTest
 public:
 	void Test()
 	{
-		Log log1(10);
+		Log log1(100);
 
 		for (int i = 0; i < 10; ++i)
 		{

@@ -29,7 +29,7 @@ private:
 	int m_size;
 	string m_buff;
 public:
-	Log(int n): m_size(100) {}
+	Log(int n): m_size(n) {}
 
 	int WriteLog(string &info)
 	{
