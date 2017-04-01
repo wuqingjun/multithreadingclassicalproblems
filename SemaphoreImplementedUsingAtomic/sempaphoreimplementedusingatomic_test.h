@@ -47,17 +47,19 @@ class SemaphoreTest
 private: 
 	Semaphore semaphore;
 public:
-
-
 	SemaphoreTest() : semaphore(10){}
 	void Test()
 	{
-		srand(0);
-		thread p(Producer, std::ref(semaphore));
-		thread c(Consumer, std::ref(semaphore));
+		for (int i = 0; i < 5; ++i)
+		{
+			srand(0);
+			thread p(Producer, std::ref(semaphore));
+			thread c(Consumer, std::ref(semaphore));
 
-		p.join();
-		c.join();
+			p.join();
+			c.join();
+		}
+
 	}
 
 
