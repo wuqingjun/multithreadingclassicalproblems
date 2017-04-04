@@ -29,10 +29,8 @@ public:
 		{
 			T t;
 			lock_guard<mutex> lock(mtx);
-			while (nSize == n)
-			{
-				cvFull.wait(lock);
-			}
+			cvFull.wait(lock, nSize != n);
+
 			mBuffer[pos] = T;
 			pos = (pos + 1) % n;
 			++nSize;
@@ -45,10 +43,7 @@ public:
 		while (true)
 		{
 			lock_guard<mutex> lock(mtx);
-			while (nSize == 0)
-			{
-				cvEmpty.wait(lock);
-			}
+			cvEmpty.wait(lock, nSize != 0);
 			T t = mBuffer[pos];
 			pos = (pos - 1 + n) % n;
 			--nSize;

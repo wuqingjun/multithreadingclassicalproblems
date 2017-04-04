@@ -28,6 +28,9 @@
     <Filter Include="Problems\EfficientLogging">
       <UniqueIdentifier>{480e000c-b03d-47c2-b65f-f3317cbaed5e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Problems\TwoThreadPrintingNatrualNumbers">
+      <UniqueIdentifier>{c9fe25a7-87b4-47d7-b5bb-45204123b77f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -56,6 +59,9 @@
     </ClInclude>
     <ClInclude Include="..\..\EfficientLogging\efficientlogging_lockfree_wade.h">
       <Filter>Problems\EfficientLogging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TwoThreadsPrintingNaturalNumbers\twothreadsprintingnaturalnumbers_wade_conditionvariable.h">
+      <Filter>Problems\TwoThreadPrintingNatrualNumbers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
