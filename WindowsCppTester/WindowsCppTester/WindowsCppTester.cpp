@@ -16,7 +16,7 @@ void TestSemaphoreUsingAtomic()
 void TestEfficientLogging()
 {
 	LogTest test;
-	test.Test();
+	test.Test1();
 }
 
 int main()

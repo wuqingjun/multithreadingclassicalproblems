@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\EfficientLogging\efficientloggingclass_wade.h" />
     <ClInclude Include="..\..\EfficientLogging\efficientloggingclass_test.h" />
+    <ClInclude Include="..\..\EfficientLogging\efficientlogging_lockfree_wade.h" />
     <ClInclude Include="..\..\MutexImplementedUsingSemaphore\muteximplementedusingsemaphore_wade.h" />
     <ClInclude Include="..\..\ProducerConsumer\producerconsumer_wade.h" />
     <ClInclude Include="..\..\SemaphoreImplementedUsingAtomic\sempaphoreimplementedusingatomic.h" />
