@@ -23,7 +23,7 @@ void TestEfficientLogging()
 void TestTwoThreads()
 {
 	TwoThreadsPrintingTest test;
-	test.Test();
+	test.Test1();
 }
 
 int main()

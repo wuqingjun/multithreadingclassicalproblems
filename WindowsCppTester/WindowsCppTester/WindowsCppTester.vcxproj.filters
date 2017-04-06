@@ -66,6 +66,9 @@
     <ClInclude Include="..\..\TwoThreadsPrintingNaturalNumbers\twothreadsprintingnaturalnumbers_test.h">
       <Filter>Problems\TwoThreadPrintingNatrualNumbers</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\TwoThreadsPrintingNaturalNumbers\twothreadsprintingnaturalnumbers_lockfree_wade.h">
+      <Filter>Problems\TwoThreadPrintingNatrualNumbers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
