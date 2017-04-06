@@ -146,6 +146,7 @@
     <ClInclude Include="..\..\EfficientLogging\efficientloggingclass_test.h" />
     <ClInclude Include="..\..\EfficientLogging\efficientlogging_lockfree_wade.h" />
     <ClInclude Include="..\..\MutexImplementedUsingSemaphore\muteximplementedusingsemaphore_wade.h" />
+    <ClInclude Include="..\..\PhoneBook\ReadFrequentPhoneBook.h" />
     <ClInclude Include="..\..\ProducerConsumer\producerconsumer_wade.h" />
     <ClInclude Include="..\..\SemaphoreImplementedUsingAtomic\sempaphoreimplementedusingatomic.h" />
     <ClInclude Include="..\..\SemaphoreImplementedUsingAtomic\sempaphoreimplementedusingatomic_test.h" />

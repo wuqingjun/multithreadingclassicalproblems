@@ -31,6 +31,9 @@
     <Filter Include="Problems\TwoThreadPrintingNatrualNumbers">
       <UniqueIdentifier>{c9fe25a7-87b4-47d7-b5bb-45204123b77f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Problems\PhoneBook">
+      <UniqueIdentifier>{d08bf70d-dec7-4ee3-beee-c1054195d210}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -68,6 +71,9 @@
     </ClInclude>
     <ClInclude Include="..\..\TwoThreadsPrintingNaturalNumbers\twothreadsprintingnaturalnumbers_lockfree_wade.h">
       <Filter>Problems\TwoThreadPrintingNatrualNumbers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhoneBook\ReadFrequentPhoneBook.h">
+      <Filter>Problems\PhoneBook</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
