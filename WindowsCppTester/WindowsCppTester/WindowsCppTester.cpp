@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "..\..\SemaphoreImplementedUsingAtomic\sempaphoreimplementedusingatomic_test.h"
 #include "..\..\EfficientLogging\efficientloggingclass_test.h"
+#include "..\..\TwoThreadsPrintingNaturalNumbers\twothreadsprintingnaturalnumbers_test.h"
 
 
 void TestSemaphoreUsingAtomic()
@@ -19,9 +20,16 @@ void TestEfficientLogging()
 	test.Test1();
 }
 
+void TestTwoThreads()
+{
+	TwoThreadsPrintingTest test;
+	test.Test();
+}
+
 int main()
 {
-	TestEfficientLogging();
+	//TestEfficientLogging();
+	TestTwoThreads();
 
     return 0;
 }
