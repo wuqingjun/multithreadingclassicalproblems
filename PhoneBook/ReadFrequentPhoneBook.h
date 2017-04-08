@@ -2,33 +2,57 @@
 
 #include <string>
 #include <vector>
+#include <atomic>
 using namespace std;
 
 struct Person
 {
+public: 
+	Person(string n, string p) : Name(n), PhoneNumber(p) {}
 	string Name;
 	string PhoneNumber;
 };
 
 struct Node
 {
-	char c;
 	Person * person;
-	vector<Node *> children;
-	Node(char c1) : c(c), children(26, NULL) {}
+	vector<atomic<Node *> > children;
+	Node() : children(26){
+		for (int i = 0; i < 26; ++i) {
+			children[i] = NULL;
+		}
+	}
 };
 
 class NameTrie
 {
 private:
-	Node *root;
+	Node *m_root;
 public:
-	NameTrie() : root(NULL) {}
-	void Add(string number)
+	NameTrie() : m_root(new Node() ){}
+	void Add(string name)
 	{
-		for (auto n : number)
+		Node * curr = m_root;
+		for (auto n : name)
 		{
-
+			int i = n - 'a';
+			Node *newNode = new Node();
+			for (Node * tmp = curr->children[i].load(); 
+				tmp == NULL && !curr->children[i].compare_exchange_weak(tmp, newNode); 
+				tmp = curr->children[i].load()) {}
+			if (newNode != curr->children[i]) delete newNode;
+			curr = curr->children[i];
+			curr->person = new Person("testname", "33112");
 		}
+	}
+
+	Person *Search(string name)
+	{
+		Node *curr = m_root;
+		for (auto n : name)
+		{
+			curr = curr->children[n - 'a'];
+		}
+		return curr->person;
 	}
 };

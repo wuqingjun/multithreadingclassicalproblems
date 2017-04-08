@@ -75,6 +75,9 @@
     <ClInclude Include="..\..\PhoneBook\ReadFrequentPhoneBook.h">
       <Filter>Problems\PhoneBook</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\PhoneBook\ReadFrequentPhoneBook_test.h">
+      <Filter>Problems\PhoneBook</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
