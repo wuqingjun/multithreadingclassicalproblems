@@ -30,6 +30,8 @@ void TestPhoneBook()
 {
 	PhoneBookTest test;
 	test.Test0();
+	test.Test1();
+	test.Test2();
 }
 
 int main()
