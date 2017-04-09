@@ -7,7 +7,6 @@ class PhoneBookTest
 public:
 	void Test0()
 	{
-		//NameTrie trie;
 		Trie<StringIndexer> trie;
 
 		vector<Person> people({ Person("john smith", "1111111"), Person("wade wu", "2222222") });
