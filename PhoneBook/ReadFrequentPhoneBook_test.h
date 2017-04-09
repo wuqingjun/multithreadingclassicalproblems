@@ -53,5 +53,6 @@ public:
 
 		auto n = trie.Search("john smith");
 		n = trie.Search("wade wu");
+		n = trie.Search("not exsiting");
 	}
 };

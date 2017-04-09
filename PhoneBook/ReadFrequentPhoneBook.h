@@ -80,14 +80,14 @@ public:
 	}
 
 	
-	T *Search(string name)
+	T *Search(string key)
 	{
 		auto idx = Indexer();
 		Node<Indexer::ChildrenSize, T> *curr = m_root;
-		for (auto n : name)
+		for (int i = 0; i < key.size() && curr != NULL; ++i)
 		{
-			curr = curr->children[idx(n)];
+			curr = curr->children[idx(key[i])];
 		}
-		return curr->person;
+		return curr == NULL ? NULL : curr->person;
 	}
 };
