@@ -7,7 +7,7 @@ class PhoneBookTest
 public:
 	void Test0()
 	{
-		Trie<StringIndexer> trie;
+		Trie<Person, StringIndexer> trie;
 
 		vector<Person> people({ Person("john smith", "1111111"), Person("wade wu", "2222222") });
 		for (auto &p : people)
@@ -21,7 +21,7 @@ public:
 
 	void Test1()
 	{
-		Trie <NumberIndexer> trie;
+		Trie <Person, NumberIndexer> trie;
 
 		vector<Person> people({ Person("john smith", "1111111"), Person("wade wu", "2222222") });
 		for (auto &p : people)
@@ -35,7 +35,7 @@ public:
 
 	void Test2()
 	{
-		Trie <AlphaNumericIndexer> trie;
+		Trie <Person, AlphaNumericIndexer> trie;
 
 		vector<Person> people({ Person("john smith", "1111111"), Person("wade wu", "2222222") });
 		for (auto &p : people)

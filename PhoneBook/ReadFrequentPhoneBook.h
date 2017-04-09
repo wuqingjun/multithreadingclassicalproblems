@@ -13,12 +13,12 @@ public:
 	string PhoneNumber;
 };
 
-template<size_t childrenNumber>
+template<size_t childrenNumber, class T>
 struct Node
 {
-	Person * person;
+	T * person;
 	vector<atomic<Node *> > children;
-	Node() : children(childrenNumber){
+	Node() : children(childrenNumber), person(NULL){
 		for (int i = 0; i < childrenNumber; ++i) {
 			children[i] = NULL;
 		}
@@ -54,22 +54,22 @@ struct AlphaNumericIndexer
 	}
 };
 
-template<class Indexer = StringIndexer>
+template<class T, class Indexer = StringIndexer>
 class Trie
 {
 private:
-	Node<Indexer::ChildrenSize> *m_root;
+	Node<Indexer::ChildrenSize, T> *m_root;
 public:
-	Trie() : m_root(new Node<Indexer::ChildrenSize>()) {}
-	void Add(string key, Person *person)
+	Trie() : m_root(new Node<Indexer::ChildrenSize, T>()) {}
+	void Add(string key, T *person)
 	{
 		auto idx = Indexer();
-		Node<Indexer::ChildrenSize> * curr = m_root;
+		Node<Indexer::ChildrenSize, T> * curr = m_root;
 		for (auto n : key)
 		{
 			int i = idx(n);
-			Node<Indexer::ChildrenSize> *newNode = new Node<Indexer::ChildrenSize>();
-			for (Node<Indexer::ChildrenSize> * tmp = curr->children[i].load();
+			Node<Indexer::ChildrenSize, T> *newNode = new Node<Indexer::ChildrenSize, T>();
+			for (Node<Indexer::ChildrenSize, T> * tmp = curr->children[i].load();
 				tmp == NULL && !curr->children[i].compare_exchange_weak(tmp, newNode);
 				tmp = curr->children[i].load()) {
 			}
@@ -80,10 +80,10 @@ public:
 	}
 
 	
-	Person *Search(string name)
+	T *Search(string name)
 	{
 		auto idx = Indexer();
-		Node<Indexer::ChildrenSize> *curr = m_root;
+		Node<Indexer::ChildrenSize, T> *curr = m_root;
 		for (auto n : name)
 		{
 			curr = curr->children[idx(n)];
