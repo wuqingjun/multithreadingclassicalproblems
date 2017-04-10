@@ -23,7 +23,7 @@ void TestEfficientLogging()
 void TestTwoThreads()
 {
 	TwoThreadsPrintingTest test;
-	test.Test1();
+	test.Test2();
 }
 
 void TestPhoneBook()
@@ -37,8 +37,8 @@ void TestPhoneBook()
 int main()
 {
 	//TestEfficientLogging();
-	//TestTwoThreads();
-	TestPhoneBook();
+	TestTwoThreads();
+	//TestPhoneBook();
     return 0;
 }
 

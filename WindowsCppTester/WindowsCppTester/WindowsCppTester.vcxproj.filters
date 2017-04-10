@@ -78,6 +78,9 @@
     <ClInclude Include="..\..\PhoneBook\ReadFrequentPhoneBook_test.h">
       <Filter>Problems\PhoneBook</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\TwoThreadsPrintingNaturalNumbers\twothreadsprintingnaturalnumbers_wade_twoconditionvariables.h">
+      <Filter>Problems\TwoThreadPrintingNatrualNumbers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
