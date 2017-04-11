@@ -10,7 +10,7 @@ using namespace std;
 void WriteToDiskLockFree(string &buff, string &info,  atomic_int &len, int size)
 {
 	int currLen = len;
-	for (; !len.compare_exchange_weak(currLen, len + info.size(), std::memory_order_release, std::memory_order_relaxed); 
+	for (; !len.compare_exchange_weak(currLen, len + (int) info.size(), std::memory_order_release, std::memory_order_relaxed); 
 		currLen = len);
 
 	for (int i = 0; i < info.size(); ++i)

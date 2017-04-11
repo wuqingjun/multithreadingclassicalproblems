@@ -6,6 +6,7 @@
 #include "..\..\EfficientLogging\efficientloggingclass_test.h"
 #include "..\..\TwoThreadsPrintingNaturalNumbers\twothreadsprintingnaturalnumbers_test.h"
 #include "..\..\PhoneBook\ReadFrequentPhoneBook_test.h"
+#include "..\..\ReaderWriterProblemI\readerwriterproboemI_test.h"
 
 void TestSemaphoreUsingAtomic()
 {
@@ -34,11 +35,18 @@ void TestPhoneBook()
 	test.Test2();
 }
 
+void TestReaderWriter()
+{
+	ReaderWriterProblemITest test;
+	test.Test1();
+}
+
 int main()
 {
 	//TestEfficientLogging();
-	TestTwoThreads();
-	//TestPhoneBook();
+	//TestTwoThreads();
+	//TestPhoneBook();b
+	TestReaderWriter();
     return 0;
 }
 

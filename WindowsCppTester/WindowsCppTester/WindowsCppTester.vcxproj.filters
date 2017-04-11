@@ -34,6 +34,9 @@
     <Filter Include="Problems\PhoneBook">
       <UniqueIdentifier>{d08bf70d-dec7-4ee3-beee-c1054195d210}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Problems\ReaderWriterProblemI">
+      <UniqueIdentifier>{3de6e1fb-d76b-4324-9957-556b61cf6456}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -80,6 +83,12 @@
     </ClInclude>
     <ClInclude Include="..\..\TwoThreadsPrintingNaturalNumbers\twothreadsprintingnaturalnumbers_wade_twoconditionvariables.h">
       <Filter>Problems\TwoThreadPrintingNatrualNumbers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReaderWriterProblemI\readerwriterproblemI_wade.h">
+      <Filter>Problems\ReaderWriterProblemI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReaderWriterProblemI\readerwriterproboemI_test.h">
+      <Filter>Problems\ReaderWriterProblemI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
