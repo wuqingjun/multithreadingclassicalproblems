@@ -16,7 +16,6 @@ class ReaderWriterProblemI
 private:
 	string m_Content;
 	mutex m_Read;
-	mutex m_Write;
 	condition_variable m_cvWriter;
 	int m_nReaderCount;
 public:
