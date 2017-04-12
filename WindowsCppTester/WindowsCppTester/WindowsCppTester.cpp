@@ -7,6 +7,7 @@
 #include "..\..\TwoThreadsPrintingNaturalNumbers\twothreadsprintingnaturalnumbers_test.h"
 #include "..\..\PhoneBook\ReadFrequentPhoneBook_test.h"
 #include "..\..\ReaderWriterProblemI\readerwriterproboemI_test.h"
+#include "..\..\SemaphoreImplementedUsingConditionVariable\semaphoreimplementedusingconditionvariable_test.h"
 
 void TestSemaphoreUsingAtomic()
 {
@@ -41,12 +42,19 @@ void TestReaderWriter()
 	test.Test1();
 }
 
+void TestSemaphoreImplementedUsingConditionVariable()
+{
+	SemaphoreImplementedUsingConditionVariableTest test;
+	test.Test();
+}
+
 int main()
 {
 	//TestEfficientLogging();
 	//TestTwoThreads();
 	//TestPhoneBook();b
-	TestReaderWriter();
+	//TestReaderWriter();
+	TestSemaphoreImplementedUsingConditionVariable();
     return 0;
 }
 

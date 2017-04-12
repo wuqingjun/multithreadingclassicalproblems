@@ -10,6 +10,6 @@ public:
 	}
 	void Test1()
 	{
-		ReaderWriterProblemI rwp1(4);
+		ReaderWriterProblemI rwp1(5);
 	}
 };
