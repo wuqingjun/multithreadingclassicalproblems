@@ -43,6 +43,9 @@
     <Filter Include="Problems\SemaphoreImlementedUsingConditionVariable">
       <UniqueIdentifier>{3ac027cd-e7c1-4463-90a8-ffc83494f657}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Problems\ReaderWriterProblemIII">
+      <UniqueIdentifier>{0c3aa5a9-cd51-45e1-812e-4b066d5a8275}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -107,6 +110,12 @@
     </ClInclude>
     <ClInclude Include="..\..\ReaderWriterProblemII\readerwriterproblemII_test.h">
       <Filter>Problems\ReaderWriterProblemII</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReaderWriterProblemIII\readerwriterproblemIII_test.h">
+      <Filter>Problems\ReaderWriterProblemIII</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReaderWriterProblemIII\readerwriterproblemIII_wade.h">
+      <Filter>Problems\ReaderWriterProblemIII</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

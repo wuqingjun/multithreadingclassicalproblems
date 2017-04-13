@@ -149,6 +149,8 @@
     <ClInclude Include="..\..\PhoneBook\ReadFrequentPhoneBook.h" />
     <ClInclude Include="..\..\PhoneBook\ReadFrequentPhoneBook_test.h" />
     <ClInclude Include="..\..\ProducerConsumer\producerconsumer_wade.h" />
+    <ClInclude Include="..\..\ReaderWriterProblemIII\readerwriterproblemIII_wade.h" />
+    <ClInclude Include="..\..\ReaderWriterProblemIII\readerwriterproblemIII_test.h" />
     <ClInclude Include="..\..\ReaderWriterProblemII\readerwriterproblemII_test.h" />
     <ClInclude Include="..\..\ReaderWriterProblemII\readerwriterproblemII_wade.h" />
     <ClInclude Include="..\..\ReaderWriterProblemI\readerwriterproblemI_wade.h" />
