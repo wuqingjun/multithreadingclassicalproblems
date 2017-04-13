@@ -8,6 +8,7 @@
 #include "..\..\PhoneBook\ReadFrequentPhoneBook_test.h"
 #include "..\..\ReaderWriterProblemI\readerwriterproboemI_test.h"
 #include "..\..\SemaphoreImplementedUsingConditionVariable\semaphoreimplementedusingconditionvariable_test.h"
+#include "..\..\ReaderWriterProblemII\readerwriterproblemII_test.h"
 
 void TestSemaphoreUsingAtomic()
 {
@@ -42,6 +43,12 @@ void TestReaderWriter()
 	test.Test1();
 }
 
+void TestReaderWriterII()
+{
+	ReaderWriterProblemIITest test;
+	test.Test2();
+}
+
 void TestSemaphoreImplementedUsingConditionVariable()
 {
 	SemaphoreImplementedUsingConditionVariableTest test;
@@ -54,7 +61,8 @@ int main()
 	//TestTwoThreads();
 	//TestPhoneBook();b
 	//TestReaderWriter();
-	TestSemaphoreImplementedUsingConditionVariable();
+	TestReaderWriterII();
+	//TestSemaphoreImplementedUsingConditionVariable();
     return 0;
 }
 

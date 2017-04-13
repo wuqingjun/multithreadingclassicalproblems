@@ -96,14 +96,17 @@
     <ClInclude Include="..\..\ReaderWriterProblemI\readerwriterproboemI_test.h">
       <Filter>Problems\ReaderWriterProblemI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\ReaderWriterProblemII\readerwriterproblemII.h">
-      <Filter>Problems\ReaderWriterProblemII</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\SemaphoreImplementedUsingConditionVariable\semaphoreimplementedusingconditionvariable_wade.h">
       <Filter>Problems\SemaphoreImlementedUsingConditionVariable</Filter>
     </ClInclude>
     <ClInclude Include="..\..\SemaphoreImplementedUsingConditionVariable\semaphoreimplementedusingconditionvariable_test.h">
       <Filter>Problems\SemaphoreImlementedUsingConditionVariable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReaderWriterProblemII\readerwriterproblemII_wade.h">
+      <Filter>Problems\ReaderWriterProblemII</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ReaderWriterProblemII\readerwriterproblemII_test.h">
+      <Filter>Problems\ReaderWriterProblemII</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
