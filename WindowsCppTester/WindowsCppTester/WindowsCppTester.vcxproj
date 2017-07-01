@@ -146,6 +146,8 @@
     <ClInclude Include="..\..\EfficientLogging\efficientloggingclass_test.h" />
     <ClInclude Include="..\..\EfficientLogging\efficientlogging_lockfree_wade.h" />
     <ClInclude Include="..\..\MutexImplementedUsingSemaphore\muteximplementedusingsemaphore_wade.h" />
+    <ClInclude Include="..\..\ParallelQuickSort\PararrelQuickSort.h" />
+    <ClInclude Include="..\..\ParallelQuickSort\PararrelQuickSort_Test.h" />
     <ClInclude Include="..\..\PhoneBook\ReadFrequentPhoneBook.h" />
     <ClInclude Include="..\..\PhoneBook\ReadFrequentPhoneBook_test.h" />
     <ClInclude Include="..\..\ProducerConsumer\producerconsumer_wade.h" />
@@ -167,6 +169,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BlockingQueueUsingConditionVariable.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

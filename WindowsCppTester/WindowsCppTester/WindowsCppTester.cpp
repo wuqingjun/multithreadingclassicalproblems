@@ -9,6 +9,7 @@
 #include "..\..\ReaderWriterProblemI\readerwriterproboemI_test.h"
 #include "..\..\SemaphoreImplementedUsingConditionVariable\semaphoreimplementedusingconditionvariable_test.h"
 #include "..\..\ReaderWriterProblemII\readerwriterproblemII_test.h"
+#include "..\..\ParallelQuickSort\PararrelQuickSort_Test.h"
 
 void TestSemaphoreUsingAtomic()
 {
@@ -61,8 +62,9 @@ int main()
 	//TestTwoThreads();
 	//TestPhoneBook();b
 	//TestReaderWriter();
-	TestReaderWriterII();
+	//TestReaderWriterII();
 	//TestSemaphoreImplementedUsingConditionVariable();
+	PararrelQuickSortTest();
     return 0;
 }
 

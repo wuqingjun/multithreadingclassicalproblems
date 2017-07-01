@@ -46,6 +46,12 @@
     <Filter Include="Problems\ReaderWriterProblemIII">
       <UniqueIdentifier>{0c3aa5a9-cd51-45e1-812e-4b066d5a8275}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Problems\BlockingQueue">
+      <UniqueIdentifier>{b41d9bac-f0c4-4460-bf30-b1464722d953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Problems\ParallelQuickSort">
+      <UniqueIdentifier>{a72e957a-b2d1-483c-a68c-52dc448fed57}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -117,6 +123,12 @@
     <ClInclude Include="..\..\ReaderWriterProblemIII\readerwriterproblemIII_wade.h">
       <Filter>Problems\ReaderWriterProblemIII</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\ParallelQuickSort\PararrelQuickSort.h">
+      <Filter>Problems\ParallelQuickSort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ParallelQuickSort\PararrelQuickSort_Test.h">
+      <Filter>Problems\ParallelQuickSort</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -124,6 +136,9 @@
     </ClCompile>
     <ClCompile Include="WindowsCppTester.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockingQueueUsingConditionVariable.cpp">
+      <Filter>Problems\BlockingQueue</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
